@@ -6,4 +6,8 @@ echo "4";
 echo "5";
 
 new Edit New line for testing fast Forward way
+
+
+New edit for 3ways merge from test 2
+branch
 ?>
