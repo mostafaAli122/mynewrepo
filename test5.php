@@ -6,5 +6,12 @@ echo "4";
 echo "5";
 
 new Edit New line for testing fast Forward way
+<<<<<<< HEAD
 this is new development commit
+=======
+
+
+New edit for 3ways merge from test 2
+branch
+>>>>>>> test2
 ?>
