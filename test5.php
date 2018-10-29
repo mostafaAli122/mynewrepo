@@ -6,4 +6,5 @@ echo "4";
 echo "5";
 
 new Edit New line for testing fast Forward way
+this is new development commit
 ?>
