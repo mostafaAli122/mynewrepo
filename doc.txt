@@ -1,0 +1,107 @@
+mkdir dirName
+//intilize git in this folder
+git init 
+
+//show you all files in this folder
+ls
+
+//add changed made to file OR all files in staging Area
+git add ./fileName
+
+//to show what's in staging area 
+git status 
+
+//return file since last add in stage area or All files
+git checkout ./fileName 
+
+//save changes in local repo
+git commit -m "commit comment" 
+
+//return all files to last commit or specific commit 
+git reset --hard (commit ID)  
+
+//to connect remote repo with local repo
+git remote add origin (remote repo link)
+
+//to add all files added in local repo to remote repo
+git push origin master
+
+//to get files added in remote repo to local repo
+git pull origin master
+
+clear
+//to backspace to parent folder
+cd ..
+
+//copy remote repo to Ur local
+git clone (remote repo link)
+//to get all changes made in remote repo to Ur local
+git pull
+//to push changes U made in Local To remote repo
+git push
+
+//to make ssh key 
+ssh-keygen -t rsa -C"Ur github mail"
+
+//to copy ssh then add new ssh key on github
+cat ~/.ssh/id_rsa.pub
+
+//to show all branches in this repo
+git branch
+
+//to make new brach
+git branch (branchName)
+
+//to switch to specific branch
+git checkout (branchName)
+
+//to push changes after U added it and commit it in this specific branch
+git push origin (branchName)
+
+//to delete branch first move to another branch then delete it
+git branch -D (branchName)
+
+//to create new branch & switch to it 
+git checkout -b (branchName)
+--------------------FastForwardMerge----------------------------
+//fast forward mege Master node stop editing and new branch edit from the master and then merge it make last node of new branch become master
+
+//after makeing the changes in the new branch move to Master branch then merge it with new branch
+git checkout master 
+git merge (newBranchName)
+
+---------------------3waysMerge-----------------------
+//3 ways merge new branch start from master node and the 2 branches continue parallel the git will make commit the data exist in new branch to 	new master branch
+//first copy from the Branch
+git branch (branchName) (branchNameUwannaCOPY)
+//move to new branch
+git checkout (branchName)
+//to merge two branches
+git merge (newbranchName)
+//if there's conflict btween the 2 branches -the two branches made changes in same files-
+//show the problem by
+git status
+git add. git commit -m "message"
+
+-------------------------rebase VS Merge---------------
+//rebase change master structure
+//using merge if there's one commit made in master and U wanna addit to new branch
+git merge master
+
+//using rebase if there's many changes (commits) made in Master &U wanna addit to new branch
+git rebase master 
+
+-----------------------push --force-------------------
+//if there's changes on remote repo and you sure U dont need it on your local Repo (no need to pull then push your changes )then use 
+git push --force #delete commits before local commit in remote repo that makes conflict# 
+------------------kind of files in GIT--------------
+tracked-files staged and commited
+untracked -files unstaged and un commited yet
+
+ignored  -needed for files U don't wanna uploded it to remote(critical things password & keys & packageManager:composer)
+
+//// make (.gitignore) file & add init the file you wanna ignore Like : /node_modules
+
+
+
+
